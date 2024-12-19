@@ -1,0 +1,24 @@
+.App {
+  text-align: center;
+}
+button {
+  margin-right: 10px; /* Add space to the right of each button */
+  padding: 10px 20px; /* Optional: Add padding inside buttons for better appearance */
+  background-color: #4CAF50; /* Green background color */
+  color: white; /* White text */
+  border: none; /* Remove default button border */
+  border-radius: 5px; /* Optional: Rounded corners */
+  cursor: pointer; /* Change cursor to pointer on hover */
+  transition: background-color 0.3s; /* Smooth transition for hover effect */
+}
+
+button:hover {
+  background-color: #45a049; /* Darker green when hovered */
+}
+
+a {
+  text-decoration: none; /* Remove underline from links */
+  color: white; /* Keep text white inside the link */
+}
+
+

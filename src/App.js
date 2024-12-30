@@ -8,8 +8,10 @@ import AdminLogin from './components/AdminLogin';
 import Footer from './components/Footer';
 import Header from './components/Header';
 import AdminPanel from './components/AdminPanel';
+import BookList from './components/BookList';
+import UserBookList from './components/UserBookList';
+import AllUsers from './components/AllUsers';
 import AddBook from './components/AddBook';
-
 
 
 function App() {
@@ -36,7 +38,7 @@ function App() {
       },
       {
         path: "/login",
-        element: <Login/> 
+        element: <Login/> // user login
       },
       {
       path:"/AdminLogin",
@@ -45,7 +47,15 @@ function App() {
       {
       path:"/AdminPanel",
       element:<AdminPanel/>,
-     
+      children:[{
+            path: "BookList",
+           element: <BookList/> 
+      },{path:"AllUsers",element:<AllUsers/>}
+      ,{path:"AddBook",element:<AddBook/>}]
+      },
+      {
+      path:"/UserBookList",
+      element:<UserBookList/>
       }
     ]
   }

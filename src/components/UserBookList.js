@@ -32,7 +32,15 @@ const UserBookList = () => {
 
   return (
     <>
+    <div className="flex justify-end  bg-gray-100">
+  <div className="flex flex-col items-center p-4 shadow-md rounded-lg">
+    <div className="bg-yellow-700 rounded-full w-24 h-24 mb-4"></div>  
+    <div>Profile</div>  
+  </div>
+</div>
+
       <div className="min-h-screen bg-gray-100 flex flex-col items-center p-4 w-full">
+      
         <div>
           <input
             className="w-50 p-2 bg-yellow-200 rounded-md"
@@ -62,7 +70,7 @@ const UserBookList = () => {
                 <p className="text-gray-700">Status: {book.status}</p>
                 <p className="text-gray-700">Published: {book.publishedYear}</p>
                 <button className="w-max bg-green-600 p-2 rounded-lg border m-6">
-                  Issue
+                  Borrow
                 </button>
               </div>
             ))}
